@@ -1,6 +1,48 @@
+* {
+    font-family: 'Commissioner', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.btn-primaryColor {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-primaryColor:hover {
+    background-color: hsl(176, 72%, 28%);
+    color: white;
+}
+
 .headerBg {
     background-image: url(../images/image-hero-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
+}
+
+.main-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* width: 800px; */
+}
+
+.top-300 {
+    top: 300px;
+}
+
+.top-500 {
+    top: 600px;
+}
+
+.top-800 {
+    top: 750px;
 }
