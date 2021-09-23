@@ -40,9 +40,22 @@ h2 {
 }
 
 .top-500 {
-    top: 600px;
+    top: 700px;
 }
 
 .top-800 {
-    top: 750px;
+    top: 1000px;
+}
+
+.progressPercentage {
+    width: 89.914%;
+    font-size: 16px;
+}
+
+.progressBar-height {
+    height: 25px;
+}
+
+.bold {
+    font-weight: 700;
 }
