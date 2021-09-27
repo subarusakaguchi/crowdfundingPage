@@ -28,16 +28,16 @@
     right: 0;
 }
 
-.top-300 {
+.top-1 {
     top: 300px;
 }
 
-.top-650 {
-    top: 1000px;
+.top-2 {
+    top: 650px;
 }
 
-.top-910 {
-    top: 1500px;
+.top-3 {
+    top: 950px;
 }
 
 .progressPercentage {
@@ -122,7 +122,21 @@ input[type=number] {
 
       #borderEnd-adjust {
         border-right: 1px solid #dee2e6;
-    }
-      
+      }
 
+      .top-1 {
+          top: 200px;
+      }
+    
+      .top-2 {
+          top: 700px;
+      }
+
+      .top-3 {
+          top: 1120px;
+      }
+
+      .headerBg {
+          background-position: bottom;
+      }
   }
