@@ -1,13 +1,6 @@
 * {
     font-family: 'Commissioner', sans-serif;
-}
-
-h1 {
-    font-weight: 700;
-}
-
-h2 {
-    font-weight: 400;
+    outline: none;
 }
 
 .textPrimaryColor {
@@ -22,17 +15,6 @@ h2 {
     background-color: hsl(176, 72%, 28%);
 }
 
-.btn-primaryColor {
-    background-color: hsl(176, 50%, 47%);
-    color: white;
-    border-radius: 50px;
-}
-
-.btn-primaryColor:hover {
-    background-color: hsl(176, 72%, 28%);
-    color: white;
-}
-
 .headerBg {
     background-image: url(../images/image-hero-desktop.jpg);
     background-repeat: no-repeat;
@@ -44,19 +26,18 @@ h2 {
     position: absolute;
     left: 0;
     right: 0;
-    /* width: 800px; */
 }
 
 .top-300 {
     top: 300px;
 }
 
-.top-500 {
-    top: 700px;
+.top-650 {
+    top: 1000px;
 }
 
-.top-800 {
-    top: 1000px;
+.top-910 {
+    top: 1500px;
 }
 
 .progressPercentage {
@@ -84,6 +65,10 @@ h2 {
     -ms-transform: scale(3); /* IE 9 */
     -webkit-transform: scale(3); /* Chrome, Safari, Opera */
     transform: scale(3);
+}
+
+circle {
+    fill: aqua;
 }
 
 input[type='radio']:after {
@@ -120,8 +105,24 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#borderEnd-adjust {
+    border-right: 0px;
+}
+
 
 input[type=number] {
     outline: none;
     -moz-appearance: textfield;
+  }
+
+  @media only screen and (max-width: 992px) {
+      section {
+          min-width: 90%;
+      }
+
+      #borderEnd-adjust {
+        border-right: 1px solid #dee2e6;
+    }
+      
+
   }
