@@ -10,8 +10,16 @@ h2 {
     font-weight: 400;
 }
 
+.textPrimaryColor {
+    color: hsl(176, 50%, 47%);
+}
+
 .bgPrimaryColor {
     background-color: hsl(176, 50%, 47%);
+}
+
+.hoverSecondaryColor:hover {
+    background-color: hsl(176, 72%, 28%);
 }
 
 .btn-primaryColor {
@@ -63,3 +71,57 @@ h2 {
 .bold {
     font-weight: 700;
 }
+
+.bookmarkSize {
+    width: 70px;
+}
+
+.minWidth-modal {
+    min-width: 700px;
+}
+
+.radio-size {
+    -ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Chrome, Safari, Opera */
+    transform: scale(3);
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: hsl(176, 50%, 47%);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+    outline: none;
+    -moz-appearance: textfield;
+  }

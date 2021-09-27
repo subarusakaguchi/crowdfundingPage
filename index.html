@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="home">
     <header class="headerBg">
         <div class="container d-flex justify-content-between">
             <div class="mt-5">
@@ -41,11 +41,13 @@
                 </div>
     
                 <div class="d-flex justify-content-between mt-4">
-                    <button class="btn btn-lg px-5 p-4 btn-primaryColor">Apoiar este projeto!</button>
+                    <button data-bs-toggle="modal" data-bs-target="#main-modal" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar Projeto</button>
                     <!-- Precisa fazer ainda -->
-                    <div>
-                        <img src="./images/icon-bookmark.svg" alt="bookmark icon">
-                        <p class="btn btn-lg p-3 btn-primaryColor">Favoritar</p>
+                    <div class="position-relative">
+                        <button class="btn btn-secondary text-white fs-5 fw-bold ps-5 pe-4 rounded-pill">
+                            <img class="position-absolute top-50 start-0 translate-middle" src="./images/icon-bookmark.svg" alt="favoritar">
+                            Favoritar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -54,17 +56,17 @@
         <section class="container main-container bg-white p-5 rounded w-50 shadow top-500">
             <div class="d-flex justify-content-left">
                 <div class="border-end pe-5">
-                    <p class="h2">R$89,914</p>
+                    <p class="h2 fw-bold">R$89,914</p>
                     <p>de R$100,000</p>
                 </div>
                 
                 <div class="border-end px-5">
-                    <p class="h2">5,007</p>
+                    <p class="h2 fw-bold">5,007</p>
                     <p>apoiadores</p>
                 </div>
 
-                <div class="px-5">
-                    <p class="h2">56</p>
+                <div class="ps-5">
+                    <p class="h2 fw-bold">56</p>
                     <p>dias faltando</p>
                 </div>
             </div>
@@ -78,66 +80,349 @@
 
         <section class="container main-container bg-white p-5 rounded w-50 shadow top-800">
             <div>
-                <h3 class="h4 bold">About this project</h3>
+                <h3 class="h4 bold">Sobre o projeto</h3>
     
-                <p>
-                    The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
-                    to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
-                    your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+                <p class="text-secondary">
+                    O Mastercraft Bamboo Monitor Riser é uma plataforma robusta e elegante que eleva sua tela
+                    para uma altura de visualização mais confortável. Colocar seu monitor no nível dos olhos tem o potencial de melhorar
+                    sua postura e deixá-lo mais confortável no trabalho, ajudando-o a manter o foco na tarefa em questão.
                 </p>
-                <p>
-                    Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
-                    to allow notepads, pens, and USB sticks to be stored under the stand.
+                <p class="text-secondary">
+                    Apresentando habilidade artesanal, a simplicidade do design cria espaço extra na mesa abaixo do seu computador
+                    para permitir que blocos de notas, canetas e dispositivos USB sejam armazenados sob o suporte.
                 </p>
             </div>
     
             <div>
-                <div class="container border rounded p-4">
+                <div class="container border rounded p-4 mb-4">
                     <div class="d-flex justify-content-between">
-                        <h4 class="h4 bold">Bamboo Stand</h4>
-                        <p>Apoie com R$25 reais ou mais</p>
+                        <h4 class="h4 bold">Edição básica em Bambu</h4>
+                        <p class="textPrimaryColor">Apoie com R$135 reais ou mais</p>
                     </div>
-                    <p>
-                        You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-                        you’ll be added to a special Backer member list.
+                    <p class="text-secondary">
+                        Você obtém um suporte ergonômico feito de bambu natural. Você nos ajudou a lançar nossa campanha promocional, e
+                        você será adicionado a uma lista especial de membros Apoiadores.
                     </p>
                     <div class="d-flex justify-content-between">
-                        <p>101 left</p>
-                        <button class="btn btn-success">Selecionar recompensa</button>
+                        <div class="d-flex align-items-center">
+                            <p class="fs-2 fw-bold pe-1">101</p>
+                            <p class=""> left</p>
+                        </div>
+                        <button class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Selecionar recompensa</button>
                     </div>
                 </div>
     
-                <div class="container">
-                    <h4>Black Edition Stand</h4>
-                    Pledge $75 or more
-                    <p>
-                        You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-                        member list. Shipping is included.
+                <div class="container border rounded p-4 mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="h4 bold">Edição Black</h4>
+                        <p class="textPrimaryColor">Apoie com R$400 reais ou mais</p>
+                    </div>
+                    <p class="text-secondary">
+                        Você recebe um suporte para computador Black Special Edition e um agradecimento pessoal. Você será adicionado ao nosso apoiador
+                        lista de membros. O frete está incluso.
                     </p>
-                    64 left
-                    <button>Select Reward</button>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="fs-2 fw-bold pe-1">64</p>
+                            <p class=""> left</p>
+                        </div>
+                        <button class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Selecionar recompensa</button>
+                    </div>
                 </div>
     
-                <div class="container">
-                    <h4>Mahogany Special Edition</h4>
-                    Pledge $200 or more
-                    <p>
-                        You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-                        to our Backer member list. Shipping is included.
+                <div class="container border rounded p-4 mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="h4 bold">Edição especial em Mogno</h4>
+                        <p class="textPrimaryColor">Apoie com R$1000 reais ou mais</p>
+                    </div>
+                    <p class="text-secondary">
+                        Você ganha dois suportes de Mogno Edição Especial, uma Camiseta Backer e um agradecimento pessoal. Você será adicionado
+                        à nossa lista de membros Apoiadores. O frete está incluso.
                     </p>
-                    0 left
-                    <button>Out of Stock</button>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="fs-2 fw-bold pe-1">0</p>
+                            <p class=""> left</p>
+                        </div>
+                        <button class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Selecionar recompensa</button>
+                    </div>
                 </div>
         </section>
 
-
-
-
-        
-
-        </div>
-
     </section>
+
+    <!-- Modal Principal -->
+    <section>
+        <div class="modal fade" id="main-modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content p-3">
+                    <div>
+                        <h4 class="h4 fw-bold">
+                            Apoie este projeto
+                        </h4>
+                        <p class="text-secondary">
+                            Quer nos ajudar a lançar o suporte de monitor de bambu da Mastercraft para o mundo?
+                        </p>
+                    </div>
+
+                    <div id="accordion-main" class="accordion">
+                        <div class="accordion-item mb-3">
+                            <h2 id="header1" class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#option1">
+                                    <div class="d-flex" data-bs-toggle="collapse" data-bs-target="#option1">
+                                        <input class="radio-size" type="radio" name="modal-selection" id="op1">
+                                        <div class="ms-4">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex">
+                                                    <h4 class="fs-6 bold pe-3">Apoie sem recompensas</h4>
+                                                </div>
+                                            </div>
+                                            <p class="text-secondary">
+                                                Escolha nos apoiar sem recompensa se você simplesmente acreditar em nosso projeto. Como apoiador,
+                                                você será inscrito para receber atualizações do produto por e-mail.
+                                            </p>
+                                        </div>
+                                </button>
+                            </h2>
+
+                            <div id="option1" class="accordion-collapse collapse show" data-bs-parent="#accordion-main">
+                                <div class="accordion-body modal-footer d-flex justify-content-between align-items-center p-0 pt-2">
+                                    <p class="text-secondary">Com quanto quer apoiar?</p>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <p class="fs-4 textPrimaryColor fw-bold mt-3 me-2">R$</p>
+                                        <input min="25" class="rounded-pill w-25 p-2 me-2 textPrimaryColor" type="number" name="pledge" id="pledge1">
+                                        <button data-bs-toggle="modal" data-bs-target="#modal-thanks" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3">
+                            <h2 id="header2" class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#option2">
+                                    <input class="radio-size" type="radio" name="modal-selection" id="op2">
+                                    <div class="ms-4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <h4 class="fs-6 bold pe-3">Edição básica em Bambu</h4>
+                                                <p class="fs-6 textPrimaryColor">Apoie com R$135 reais ou mais</p>
+                                            </div>
+                                            <p class="fw-bold">Restam 101</p>
+                                        </div>
+                                        <p class="text-secondary">
+                                            Você obtém um suporte ergonômico feito de bambu natural. Você nos ajudou a lançar nossa campanha promocional, e
+                                            você será adicionado a uma lista especial de membros Apoiadores.
+                                        </p>
+                                    </div>
+                                </button>
+                            </h2>
+
+                            <div id="option2" class="accordion-collapse collapse" data-bs-parent="#accordion-main">
+                                <div class="accordion-body modal-footer d-flex justify-content-between align-items-center p-0 pt-2">
+                                    <p class="text-secondary">Com quanto quer apoiar?</p>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <p class="fs-4 textPrimaryColor fw-bold mt-3 me-2">R$</p>
+                                        <input min="25" class="rounded-pill w-25 p-2 me-2 textPrimaryColor" type="number" name="pledge" id="pledge1">
+                                        <button data-bs-toggle="modal" data-bs-target="#modal-thanks" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3">
+                            <h2 id="header3" class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#option3">
+                                    <input class="radio-size" type="radio" name="modal-selection" id="op3">
+                                    <div class="ms-4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <h4 class="fs-6 bold pe-3">Edição Black</h4>
+                                                <p class="fs-6 textPrimaryColor">Apoie com R$400 reais ou mais</p>
+                                            </div>
+                                            <p class="fw-bold">Restam 64</p>
+                                        </div>
+                                        <p class="text-secondary">
+                                            Você recebe um suporte para computador Black Special Edition e um agradecimento pessoal. Você será adicionado ao nosso apoiador
+                                            lista de membros. O frete está incluso.
+                                        </p>
+                                    </div>
+                                </button>
+                            </h2>
+
+                            <div id="option3" class="accordion-collapse collapse" data-bs-parent="#accordion-main">
+                                <div class="accordion-body modal-footer d-flex justify-content-between align-items-center p-0 pt-2">
+                                    <p class="text-secondary">Com quanto quer apoiar?</p>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <p class="fs-4 textPrimaryColor fw-bold mt-3 me-2">R$</p>
+                                        <input min="25" class="rounded-pill w-25 p-2 me-2 textPrimaryColor" type="number" name="pledge" id="pledge1">
+                                        <button data-bs-toggle="modal" data-bs-target="#modal-thanks" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3">
+                            <h2 id="header4" class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#option4">
+                                    <input class="radio-size" type="radio" name="modal-selection" id="op4">
+                                    <div class="ms-4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <h4 class="fs-6 bold pe-3">Edição especial em Mogno</h4>
+                                                <p class="fs-6 textPrimaryColor">Apoie com R$1000 reais ou mais</p>
+                                            </div>
+                                            <p class="fw-bold">Restam 0</p>
+                                        </div>
+                                        <p class="text-secondary">
+                                            Você ganha dois suportes de Mogno Edição Especial, uma Camiseta Backer e um agradecimento pessoal. Você será adicionado
+                                            à nossa lista de membros Apoiadores. O frete está incluso.
+                                        </p>
+                                    </div>
+                                </button>
+                            </h2>
+
+                            <div id="option4" class="accordion-collapse collapse" data-bs-parent="#accordion-main">
+                                <div class="accordion-body modal-footer d-flex justify-content-between align-items-center p-0 pt-2">
+                                    <p class="text-secondary">Com quanto quer apoiar?</p>
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <p class="fs-4 textPrimaryColor fw-bold mt-3 me-2">R$</p>
+                                        <input min="25" class="rounded-pill w-25 p-2 me-2 textPrimaryColor" type="number" name="pledge" id="pledge1">
+                                        <button data-bs-toggle="modal" data-bs-target="#modal-thanks" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div id="accordion-main" class="accordion">
+                        <div class="container border rounded p-4 mb-4">
+                            <div class="d-flex" data-bs-toggle="collapse" data-bs-target="#option1">
+                                <input class="radio-size" type="radio" name="modal-selection" id="op1">
+                                <div class="ms-4">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <h4 class="fs-6 bold pe-3">Apoie sem recompensas</h4>
+                                        </div>
+                                    </div>
+                                    <p class="text-secondary">
+                                        Escolha nos apoiar sem recompensa se você simplesmente acreditar em nosso projeto. Como apoiador,
+                                        você será inscrito para receber atualizações do produto por e-mail.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="option1" class="modal-footer d-flex justify-content-between align-items-center p-0 pt-2" data-bs-parent="accordion-main">
+                                <p class="text-secondary">Com quanto quer apoiar?</p>
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <p class="fs-4 textPrimaryColor fw-bold mt-3 me-2">R$</p>
+                                    <input min="25" class="rounded-pill w-25 p-2 me-2 textPrimaryColor" type="number" name="pledge" id="pledge1">
+                                    <button data-bs-toggle="modal" data-bs-target="#modal-thanks" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container border rounded p-4 mb-4">
+                            <div class="d-flex" data-bs-toggle="collapse" data-bs-target="#option2">
+                                <input class="radio-size" type="radio" name="modal-selection" id="op2">
+                                <div class="ms-4">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <h4 class="fs-6 bold pe-3">Edição básica em Bambu</h4>
+                                            <p class="fs-6 textPrimaryColor">Apoie com R$135 reais ou mais</p>
+                                        </div>
+                                        <p class="fw-bold">Restam 101</p>
+                                    </div>
+                                    <p class="text-secondary">
+                                        Você obtém um suporte ergonômico feito de bambu natural. Você nos ajudou a lançar nossa campanha promocional, e
+                                        você será adicionado a uma lista especial de membros Apoiadores.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="option2" class="modal-footer d-flex justify-content-between align-items-center p-0 pt-2" data-bs-parent="accordion-main">
+                                <p class="text-secondary">Com quanto quer apoiar?</p>
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <p class="fs-4 textPrimaryColor fw-bold mt-3 me-2">R$</p>
+                                    <input min="25" class="rounded-pill w-25 p-2 me-2 textPrimaryColor" type="number" name="pledge" id="pledge2">
+                                    <button data-bs-toggle="modal" data-bs-target="#modal-thanks" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container border rounded p-4 mb-4">
+                            <div class="d-flex"  data-bs-toggle="collapse" data-bs-target="#option3">
+                                <input class="radio-size" type="radio" name="modal-selection" id="op3">
+                                <div class="ms-4">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <h4 class="fs-6 bold pe-3">Edição Black</h4>
+                                            <p class="fs-6 textPrimaryColor">Apoie com R$400 reais ou mais</p>
+                                        </div>
+                                        <p class="fw-bold">Restam 64</p>
+                                    </div>
+                                    <p class="text-secondary">
+                                        Você recebe um suporte para computador Black Special Edition e um agradecimento pessoal. Você será adicionado ao nosso apoiador
+                                        lista de membros. O frete está incluso.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="option3" class="modal-footer d-flex justify-content-between align-items-center p-0 pt-2" data-bs-parent="accordion-main">
+                                <p class="text-secondary">Com quanto quer apoiar?</p>
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <p class="fs-4 textPrimaryColor fw-bold mt-3 me-2">R$</p>
+                                    <input min="25" class="rounded-pill w-25 p-2 me-2 textPrimaryColor" type="number" name="pledge" id="pledge3">
+                                    <button data-bs-toggle="modal" data-bs-target="#modal-thanks" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container border rounded p-4 mb-4">
+                            <div class="d-flex" data-bs-toggle="collapse" data-bs-target="#option4">
+                                <input class="radio-size" type="radio" name="modal-selection" id="op4">
+                                <div class="ms-4">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <h4 class="fs-6 bold pe-3">Edição especial em Mogno</h4>
+                                            <p class="fs-6 textPrimaryColor">Apoie com R$1000 reais ou mais</p>
+                                        </div>
+                                        <p class="fw-bold">Restam 0</p>
+                                    </div>
+                                    <p class="text-secondary">
+                                        Você ganha dois suportes de Mogno Edição Especial, uma Camiseta Backer e um agradecimento pessoal. Você será adicionado
+                                        à nossa lista de membros Apoiadores. O frete está incluso.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="ooption4" class="modal-footer d-flex justify-content-between align-items-center p-0 pt-2" data-bs-parent="accordion-main">
+                                <p class="text-secondary">Com quanto quer apoiar?</p>
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <p class="fs-4 textPrimaryColor fw-bold mt-3 me-2">R$</p>
+                                    <input min="25" class="rounded-pill w-25 p-2 me-2 textPrimaryColor" type="number" name="pledge" id="pledge4">
+                                    <button data-bs-toggle="modal" data-bs-target="#modal-thanks" class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColor">Apoiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Agradecimento -->
+    <div class="modal fade" id="modal-thanks">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="d-block modal-header">
+                    <img src="./images/icon-check.svg" alt="">
+                    <h1 class="textPrimaryColor">Obrigado pelo seu Apoio!</h1>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary fs-6">
+                        Sua promessa nos permite dar mais um passo em poder compartilhar o Mastercraft Bamboo Monitor Riser com o mundo. Você receberá um e-mail assim que nossa campanha for concluída.
+                    </p>
+                </div>
+                <div class="d-flex modal-footer justify-content-center">
+                    <button class="btn text-white fs-5 fw-bold px-4 rounded-pill bgPrimaryColor hoverSecondaryColo">Entendi!</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
 
@@ -146,5 +431,7 @@
     <!-- Bootstrap e jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="./script/script.js"></script>
 </body>
 </html>
