@@ -17,7 +17,7 @@ function bookmark(obj) {
 
     let img = obj.children[0]
 
-    if (img.src == 'http://127.0.0.1:5500/images/icon-bookmark.svg') {
+    if (img.src == 'https://subarusakaguchi.github.io/crowdfundingPage/images/icon-bookmark.svg') {
         img.src = './images/icon-bookmark-2.svg'
     } else {
         img.src = './images/icon-bookmark.svg'
